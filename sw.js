@@ -8,7 +8,7 @@ self.addEventListener("activate", function (e) {
       .then(function () { return self.registration.unregister(); })
       .then(function () { return self.clients.matchAll({ type: "window" }); })
       .then(function (clients) {
-        clients.forEach(function (c) { c.navigate("https://hellgatelunch.github.io/"); });
+        clients.forEach(function (c) { c.navigate("https://hawkslunch.netlify.app/"); });
       })
   );
 });
