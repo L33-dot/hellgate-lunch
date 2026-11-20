@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hawks Lunch has moved</title>
-<meta http-equiv="refresh" content="0; url=https://hawkslunch.netlify.app/">
+<meta http-equiv="refresh" content="0; url=https://hawkslunch.netlify.app/?from=old">
 <link rel="canonical" href="https://hawkslunch.netlify.app/">
 <script>
   // Keep the page part of the address (e.g. /hellgate-lunch/flyer.html → /flyer.html).
   var rest = location.pathname.replace(/^\/hellgate-lunch\/?/, "").replace(/^index\.html$/, "");
-  location.replace("https://hawkslunch.netlify.app/" + rest + location.search + location.hash);
+  location.replace("https://hawkslunch.netlify.app/" + rest + (rest ? location.search : "?from=old") + location.hash);
 </script>
 <style>body{font:16px -apple-system,system-ui,sans-serif;padding:24px;color:#1D2A24;background:#F4F1EA} a{color:#C9541A}</style>
 </head>
